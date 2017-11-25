@@ -1,0 +1,11 @@
+C:\Users\kolapo.abolarinwa\Documents\Repo\LetsDoJavascript\AdvancedTechniquesJavaScriptJQuery\bin\Debug\netcoreapp2.0\AdvancedTechniquesJavaScriptJQuery.deps.json
+C:\Users\kolapo.abolarinwa\Documents\Repo\LetsDoJavascript\AdvancedTechniquesJavaScriptJQuery\bin\Debug\netcoreapp2.0\AdvancedTechniquesJavaScriptJQuery.runtimeconfig.json
+C:\Users\kolapo.abolarinwa\Documents\Repo\LetsDoJavascript\AdvancedTechniquesJavaScriptJQuery\bin\Debug\netcoreapp2.0\AdvancedTechniquesJavaScriptJQuery.runtimeconfig.dev.json
+C:\Users\kolapo.abolarinwa\Documents\Repo\LetsDoJavascript\AdvancedTechniquesJavaScriptJQuery\bin\Debug\netcoreapp2.0\AdvancedTechniquesJavaScriptJQuery.dll
+C:\Users\kolapo.abolarinwa\Documents\Repo\LetsDoJavascript\AdvancedTechniquesJavaScriptJQuery\bin\Debug\netcoreapp2.0\AdvancedTechniquesJavaScriptJQuery.pdb
+C:\Users\kolapo.abolarinwa\Documents\Repo\LetsDoJavascript\AdvancedTechniquesJavaScriptJQuery\obj\Debug\netcoreapp2.0\AdvancedTechniquesJavaScriptJQuery.csproj.CoreCompileInputs.cache
+C:\Users\kolapo.abolarinwa\Documents\Repo\LetsDoJavascript\AdvancedTechniquesJavaScriptJQuery\obj\Debug\netcoreapp2.0\AdvancedTechniquesJavaScriptJQuery.AssemblyInfoInputs.cache
+C:\Users\kolapo.abolarinwa\Documents\Repo\LetsDoJavascript\AdvancedTechniquesJavaScriptJQuery\obj\Debug\netcoreapp2.0\AdvancedTechniquesJavaScriptJQuery.AssemblyInfo.cs
+C:\Users\kolapo.abolarinwa\Documents\Repo\LetsDoJavascript\AdvancedTechniquesJavaScriptJQuery\obj\Debug\netcoreapp2.0\AdvancedTechniquesJavaScriptJQuery.dll
+C:\Users\kolapo.abolarinwa\Documents\Repo\LetsDoJavascript\AdvancedTechniquesJavaScriptJQuery\obj\Debug\netcoreapp2.0\AdvancedTechniquesJavaScriptJQuery.pdb
+C:\Users\kolapo.abolarinwa\Documents\Repo\LetsDoJavascript\AdvancedTechniquesJavaScriptJQuery\obj\Debug\netcoreapp2.0\AdvancedTechniquesJavaScriptJQuery.csprojResolveAssemblyReference.cache
