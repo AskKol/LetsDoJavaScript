@@ -24,7 +24,7 @@ namespace AdvancedTechniquesJavaScriptJQuery
         {
             DefaultFilesOptions options = new DefaultFilesOptions();
             options.DefaultFileNames.Clear();
-            options.DefaultFileNames.Add("AdTJvJq.html");
+            options.DefaultFileNames.Add("Introduction.html");
             app.UseDefaultFiles(options);
 
             app.UseStaticFiles();
@@ -34,12 +34,15 @@ namespace AdvancedTechniquesJavaScriptJQuery
                 RequestPath = new PathString("/webpages")
                
             });
-            app.UseStaticFiles(new StaticFileOptions()
-            {
-                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot", "Content", "Css")),
-                RequestPath = new PathString("/css")
 
-            });
+            // Below is an example of combining two static pages
+            //app.UseStaticFiles(new StaticFileOptions()
+            //{
+            //    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot", "Content", "Css")),
+            //    RequestPath = new PathString("/css")
+
+            //});
+
             //if (env.IsDevelopment())
             //{
             //    app.UseDeveloperExceptionPage();

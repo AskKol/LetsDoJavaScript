@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AdTJvJq</title>
+    <link href="../css/Site.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <canvas id="logo" width="640" height="480">
+        Attension! you dont have a canvas!
+    </canvas>
+</body>
+<script>
+
+    _KSM = {
+
+        getCanvasId: function ()
+        {
+            return document.getElementById('logo');
+        },
+
+        //draw: function (left, top, width, height)
+        //{
+        //    _KSM.drawNew(left, top, width, height, 'black', 'silver');
+        //},
+
+        draw: function (left, top, width, height, stroke, fill)
+        {	//	Draw something on the canvas
+            var canvas = _KSM.getCanvasId(),
+                options = {};
+            if (canvas.getContext)
+            {
+                var context = canvas.getContext('2d');
+                if (typeof left !== 'undefined')
+                    if (typeof left === 'object')
+                        options = left;
+                    else
+                        options = {
+                            left: left,
+                            top: top,
+                            width: width,
+                            height: height,
+                            stroke: stroke,
+                            fill: fill
+                        };
+                // Setting canvas width will clear its contents
+                if (options.clear)
+                    canvas.width = canvas.width;
+                options.left = options.left || _KSM.drawOptions.left;
+                options.top = options.top || _KSM.drawOptions.top;
+                options.width = options.width || _KSM.drawOptions.width;
+                options.height = options.height || _KSM.drawOptions.height;
+                options.stroke = options.stroke || _KSM.drawOptions.stroke;
+                options.fill = options.fill || _KSM.drawOptions.fill;
+
+                context.strokeStyle = options.stroke;
+                context.fillStyle = options.fill;
+                context.fillRect(options.left, options.top,
+                    options.width, options.height);
+                context.strokeRect(options.left, options.top,
+                    options.width, options.height);
+            }
+        },
+        drawOptions:
+        {
+            left: 10, top: 10,
+            width: 100, height: 100,
+            stroke: 'black', fill: 'silver',
+            clear: false
+        },
+        wholeDraw: function ()
+        {
+            //_KSM.draw(100, 100, 440, 280);
+
+            _KSM.draw({ height: 240, left: 50, top: 60, width: 400, fill: 'burlywood', stroke: 'lemonchiffon' });
+            _KSM.draw();
+
+        }
+    }
+
+
+    window.addEventListener('resize', _KSM.wholeDraw, false);
+    window.addEventListener('DOMContentLoaded', _KSM.wholeDraw, false);
+</script>
+
+</html>
