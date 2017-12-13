@@ -1,0 +1,32 @@
+#section1, #section2, #section3
+{	position: absolute;
+	background-image: radial-gradient(#e1e5ed,#ced7e5,#bcc7d8);
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	top: 40px;
+	overflow-y: auto;
+}
+#section1
+{	left: 10px; 
+}
+#section2
+{	left: 220px; 
+}
+#section3
+{	left: 430px; 
+}
+#proceed
+{	position: absolute;
+	width: 100px;
+	top: 250px;
+	left: 530px;
+}
+#messages
+{	position: absolute;
+	width: 630px;
+	height: 200px;
+	top: 280px;
+	left: 10px;
+	overflow-y: auto;
+}

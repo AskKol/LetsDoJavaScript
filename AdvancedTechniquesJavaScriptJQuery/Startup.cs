@@ -43,6 +43,14 @@ namespace AdvancedTechniquesJavaScriptJQuery
 
             });
 
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot", "Content", "Webpages", "Content")),
+                RequestPath = new PathString("/content")
+
+            });
+
+
             //if (env.IsDevelopment())
             //{
             //    app.UseDeveloperExceptionPage();
