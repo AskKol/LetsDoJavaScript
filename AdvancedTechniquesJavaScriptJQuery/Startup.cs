@@ -36,12 +36,12 @@ namespace AdvancedTechniquesJavaScriptJQuery
             });
 
             // Below is an example of combining two static pages
-            //app.UseStaticFiles(new StaticFileOptions()
-            //{
-            //    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot", "Content", "Css")),
-            //    RequestPath = new PathString("/css")
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot", "Content", "Css")),
+                RequestPath = new PathString("/css")
 
-            //});
+            });
 
             //if (env.IsDevelopment())
             //{
