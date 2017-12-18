@@ -13,46 +13,58 @@
             }, 'html');
         }
     }
-    $('#load').click(function ()
-    {
-        //If you have the content section disabled in the startup.cs file 
-        //you can use the lines below to load the content 
-        //$('#section1').load('../webpages/Content/content1.html', function ()
-        //{
-        //    $('#proceed').removeAttr('disabled');
-        //});
+    //$('#load').click(function ()
+    //{
+    //    //If you have the content section disabled in the startup.cs file 
+    //    //you can use the lines below to load the content 
+    //    //$('#section1').load('../webpages/Content/content1.html', function ()
+    //    //{
+    //    //    $('#proceed').removeAttr('disabled');
+    //    //});
 
 
-        //the kinda way people do things now though not the best way
-        //$('#section1').load('content/content1.html');
-        //$('#section2').load('content/content2.html');
-        //$('#section3').load('content/content1.html', function ()
-        //{
-        //    $('#proceed').removeAttr('disabled');
-        //});
-    });
+    //    //the kinda way people do things now though not the best way
+    //    //$('#section1').load('content/content1.html');
+    //    //$('#section2').load('content/content2.html');
+    //    //$('#section3').load('content/content1.html', function ()
+    //    //{
+    //    //    $('#proceed').removeAttr('disabled');
+    //    //});
+    //});
 
     $('#load').click(function ()
     {
         $.when(
-
-            $.get('content/content1.html', function (result)
-            {
-                $('#section1').html(result);
-            }, 'html'),
-            $.get('content/content2.html', function (result)
-            {
-                $('#section2').html(result);
-            }, 'html'),
-            $.get('content/content3.html', function (result)
-            {
-                $('#section3').html(result);
-            }, 'html')
+            loadSection({ selector: '#section1', url: 'content/content1.html' }),
+            loadSection({ selector: '#section2', url: 'content/content2.html' }),
+            loadSection({ selector: '#section3', url: 'content/content3.html' })
         )
-            .then(function ()
-            {
-                $('#proceed').removeAttr('disabled');
-            });
+        .then(function ()
+        {
+            $('#proceed').removeAttr('disabled');
+        })
+        //$.when(
+
+        //    $.get('content/content1.html', function (result)
+        //    {
+        //        $('#section1').html(result);
+        //    }, 'html'),
+        //    $.get('content/content2.html', function (result)
+        //    {
+        //        $('#section2').html(result);
+        //    }, 'html'),
+        //    $.get('content/content3.html', function (result)
+        //    {
+        //        $('#section3').html(result);
+        //    }, 'html')
+        //)
+        //    .then(function ()
+        //    {
+        //        $('#proceed').removeAttr('disabled');
+        //    });
+
+
+
     });
 
 });
