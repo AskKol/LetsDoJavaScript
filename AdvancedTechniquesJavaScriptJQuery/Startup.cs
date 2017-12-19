@@ -50,16 +50,22 @@ namespace AdvancedTechniquesJavaScriptJQuery
 
             });
 
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot", "lib")),
+                RequestPath = new PathString("/lib")
+
+            });
 
             //if (env.IsDevelopment())
             //{
             //    app.UseDeveloperExceptionPage();
             //}
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+            //app.Run(async (context) =>
+            //{
+            //    await context.Response.WriteAsync("Hello World!");
+            //});
         }
     }
 }
