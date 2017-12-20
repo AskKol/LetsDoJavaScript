@@ -11,7 +11,8 @@
             var $aSelector = $(anOption.selector);
             setTimeout(function ()
             {
-                $aSelector.append('<br/>  I am imitating a server call... <br/>');
+                $aSelector.append('<br/>  I am imitating a server call... <br/>')
+                    .trigger('complete');
             }, 2000);
         }
     }
